@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+    <!-- Nom de l'événement -->
+    <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+    <!-- Date et heure de l'événement -->
+    <TextView
+            android:id="@+id/eventDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+    <!-- Prix de l'événement -->
+    <TextView
+            android:id="@+id/eventPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp"/>
+
+    <!-- Nom -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomdeclient"
+            android:layout_marginTop="1dp"
+            android:layout_marginHorizontal="2dp">
+        <EditText
+                android:id="@+id/inputName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre nom"
+                android:inputType="textPersonName"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emaildeclient"
+            android:layout_marginTop="1dp"
+            android:layout_marginHorizontal="2dp">
+        <EditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez votre email"
+                android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+            android:id="@+id/userId"
+            android:visibility="gone"/>
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+            android:id="@+id/paymentStatus"
+            android:visibility="gone"/>
+
+    <!-- Mode de paiement (Dropdown) -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mode de paiement"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:hint="Mode de paiement">
+
+            <AutoCompleteTextView
+                    android:id="@+id/paymentDropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:clickable="true"
+                    android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Boutons et autres éléments... -->
+    </LinearLayout>
+
+
+
+
+
+    <!-- Nombre de places -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre de places"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombredeplace"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="1dp">
+        <EditText
+                android:id="@+id/inputPlaces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Entrez le nombre de places"
+                android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <!-- Boutons -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="end">
+
+        <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/annuler"
+                android:layout_marginEnd="8dp"/>
+
+        <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmer"/>
+    </LinearLayout>
+</LinearLayout>

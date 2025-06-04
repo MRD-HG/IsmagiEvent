@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation_menu"
+            app:startDestination="@id/loginFragment">
+
+    <!-- Home Fragment -->
+    <fragment
+            android:id="@+id/navigation_home"
+            android:name="com.boushib.eventsismagi.fragments.userfragments.HomeFragment"
+            android:label="fragment_home"
+            tools:layout="@layout/fragment_home">
+
+        <!-- Action to navigate to EventsDetails -->
+        <action
+                android:id="@+id/action_home_to_event_details"
+                app:destination="@id/navigation_event_details">
+            <argument
+                    android:name="eventId"
+                    app:argType="string" />
+        </action>
+    </fragment>
+
+    <!-- My Events Fragment -->
+    <fragment
+            android:id="@+id/navigation_myevents"
+            android:name="com.boushib.eventsismagi.fragments.userfragments.MyEventsFragment"
+            android:label="fragment_my_events"
+            tools:layout="@layout/fragment_my_events" />
+
+    <!-- Payments Fragment -->
+    <fragment
+            android:id="@+id/navigation_payments"
+            android:name="com.boushib.eventsismagi.fragments.userfragments.CalendarFragment"
+            android:label="fragment_payments"
+            tools:layout="@layout/calendar" />
+
+    <!-- Settings Fragment -->
+    <fragment
+            android:id="@+id/navigation_settings"
+            android:name="com.boushib.eventsismagi.fragments.SettingsFragment"
+            android:label="fragment_settings"
+            tools:layout="@layout/fragment_settings" />
+
+    <!-- Login Fragment -->
+    <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.boushib.eventsismagi.fragments.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login" />
+
+    <!-- Register Fragment -->
+    <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.boushib.eventsismagi.fragments.RegisterFragment"
+            android:label="fragment_register"
+            tools:layout="@layout/fragment_register" />
+
+    <!-- Events Details Fragment -->
+    <fragment
+            android:id="@+id/navigation_event_details"
+            android:name="com.boushib.eventsismagi.fragments.userfragments.EventsDetails"
+            android:label="fragment_event_details"
+            tools:layout="@layout/fragment_events_details">
+
+        <!-- Argument to receive eventId -->
+        <argument
+                android:name="eventId"
+                app:argType="string" />
+    </fragment>
+
+    <!-- Global Actions -->
+    <action
+            android:id="@+id/to_event_details"
+            app:destination="@id/navigation_event_details" />
+
+    <action
+            android:id="@+id/tologin"
+            app:destination="@id/loginFragment" />
+
+    <action
+            android:id="@+id/toregister"
+            app:destination="@id/registerFragment" />
+
+    <action
+            android:id="@+id/action_event_details_to_home"
+            app:destination="@id/navigation_home" />
+
+    <action
+            android:id="@+id/to_home_fragment"
+            app:destination="@id/navigation_home" />
+
+    <action
+            android:id="@+id/to_main_activity"
+            app:destination="@id/navigation_home" />
+</navigation>

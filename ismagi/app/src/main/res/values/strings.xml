@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">eventsismagi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home_fragment">Ismagi</string>
+    <string name="payments_fragment">payments fragment</string>
+    <string name="events_fragment">Events fragment</string>
+    <string name="settings_fragment">settings fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fill_all_fields">Veuillez remplir tous les champs</string>
+    <string name="login_failed">Échec de la connexion</string>
+    <string name="create_account">Create Account</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_register">S\'inscrire</string>
+    <string name="login_account">Cree Compte</string>
+    <string name="annuler">Annuler</string>
+
+    <string name="app_name1">EventSisMagi</string>
+
+    <!-- Payment dropdown -->
+    <string name="payment_hint">Mode de paiement</string>
+    <string-array name="payment_methods">
+        <item>Payer avec carte</item>
+        <item>Payer avec espèces</item>
+    </string-array>
+
+    <!-- Payment processing -->
+    <string name="stripe_key">pk_test_your_key_here</string>
+    <string name="payment_success">Paiement réussi!</string>
+    <string name="payment_failed">Échec du paiement</string>
+    <string name="selected_date_time">Date et heure: %s</string>
+    <string name="default_date_time_text">Date et heure : Non sélectionnées</string>
+    <string name="price_hint">Prix</string>
+    <string name="empty_reservations">Aucune réservation</string>
+    <string name="empty_reservations_message">Aucune réservation</string>
+    <string name="share_ticket_title">share ticket</string>
+
+</resources>

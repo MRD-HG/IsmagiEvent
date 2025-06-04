@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.adminfragments.AddEventsFragment">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:paddingHorizontal="16dp"
+                 >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Titre">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/titre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lieu">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lieu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+            <!-- Sélection de la date -->
+            <Button
+                    android:id="@+id/btn_select_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sélectionner la date"
+                    android:layout_marginBottom="2dp"/>
+
+            <!-- Sélection de l'heure -->
+            <Button
+                    android:id="@+id/btn_select_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sélectionner l'heure"
+                    android:layout_marginBottom="2dp"/>
+
+
+
+            <!-- Affichage de la date et de l'heure sélectionnées -->
+            <TextView
+                    android:id="@+id/tv_selected_date_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date et heure : Non sélectionnées"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Prix">
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/prix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+                android:id="@+id/btn_select_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sélectionner une image"
+                android:layout_marginBottom="2dp"/>
+        <ImageView
+                android:id="@+id/imageViewNote"
+              
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/placeholder"
+                 />
+
+        <!-- Événement privé ou public -->
+        <CheckBox
+                android:id="@+id/estPrive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Événement privé"/>
+
+        <!-- Bouton pour ajouter l'événement -->
+        <Button
+                android:id="@+id/btn_add_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ajouter l'événement"
+                android:layout_marginTop="1dp"/>
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,125 @@
+plugins {
+    id 'com.android.application'
+
+    id 'com.google.gms.google-services'
+}
+
+android {
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.boushib.eventsismagi'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.boushib.eventsismagi"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:33.0.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-storage'
+
+    // Image handling
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // Cloudinary
+    implementation 'com.cloudinary:cloudinary-android:2.3.1'
+
+    // Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.6'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.6'
+
+    // PDF Generation
+    implementation 'com.itextpdf:itext7-core:7.2.5'
+
+    // AndroidX Core
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.activity:activity-ktx:1.8.2'
+    implementation 'androidx.fragment:fragment-ktx:1.6.2'
+
+    // Multidex
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    /*implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+
+    implementation 'com.google.firebase:firebase-auth:23.2.0'
+    implementation 'com.google.firebase:firebase-firestore:25.1.2'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.activity:activity:1.10.1'
+
+    implementation 'com.google.firebase:firebase-storage:21.0.1'
+    implementation platform('com.google.firebase:firebase-bom:33.9.0')
+
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'androidx.fragment:fragment:1.8.6'
+    implementation 'androidx.navigation:navigation-fragment:2.8.7'
+    implementation 'androidx.navigation:navigation-ui:2.8.7'
+
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    implementation 'com.cloudinary:cloudinary-android:2.3.1'
+
+    implementation 'com.cloudinary:cloudinary-android-download:3.0.2'
+    implementation 'com.cloudinary:cloudinary-android-preprocess:3.0.2'
+
+    implementation 'androidx.activity:activity-ktx:1.10.1'
+    implementation 'androidx.fragment:fragment-ktx:1.8.6'
+
+
+    implementation 'com.itextpdf:itext7-core:7.2.5'
+    implementation 'androidx.core:core-ktx:1.15.0'
+
+
+    implementation 'androidx.print:print:1.1.0' // Stable version instead of beta
+    implementation 'androidx.multidex:multidex:2.0.1' // AndroidX version
+
+    // If you're using legacy support libraries, migrate to AndroidX
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+
+    implementation 'com.android.support:multidex:2.0.1'
+    implementation 'org.slf4j:slf4j-android:1.7.36'*/
+}

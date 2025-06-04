@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.SettingsFragment">
+
+
+
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="16dp"
+                android:background="#ffffff"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="center"
+                android:paddingTop="8dp">
+            <ImageView
+                    android:id="@+id/imageEvent1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Image de l'événement"
+                    android:src="@drawable/user_2"/>
+
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profilename"
+                    android:hint="Thomas Dubois"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10sp"
+                    android:textStyle="bold"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+            <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/profileemail"
+                    android:layout_height="wrap_content"
+                    android:hint="profile@gmail.com"
+                    android:textSize="14sp"
+                    android:textColor="?android:attr/textColorSecondary"
+                    android:paddingTop="4dp"/>
+
+        </LinearLayout>
+<LinearLayout  android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_marginTop="10dp"
+               android:paddingBottom="16dp"
+               android:background="#ffffff"
+               android:layout_marginEnd="10dp"
+               android:layout_marginStart="10dp"
+               android:layout_gravity="center"
+               android:paddingTop="8dp">
+    <Button
+            android:layout_gravity="bottom"
+            android:id="@+id/btnQuitte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quitte"
+            android:textSize="25sp"
+            android:layout_marginTop="270dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+    />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tous droits réservés © ISMAGI"
+            android:textSize="18sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:layout_gravity="bottom"/>
+
+</LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

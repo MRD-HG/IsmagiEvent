@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.cardview.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+    >
+        <LinearLayout
+
+                android:id="@+id/parent_linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+        >
+            <ImageView
+                    android:id="@+id/imageEvent1"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Image de l'événement"
+                   android:src="@drawable/picture_bg"/>
+
+            <TextView
+                    android:id="@+id/titre1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Titre"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
+
+            <TextView
+                    android:id="@+id/description1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:id="@+id/lieu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lieu"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:id="@+id/dateEvent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:id="@+id/heureEvent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heure"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+            <TextView
+                    android:id="@+id/prix1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prix"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>

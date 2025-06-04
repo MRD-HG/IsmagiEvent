@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "453032687736",
+    "project_id": "eventsismagi",
+    "storage_bucket": "eventsismagi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453032687736:android:975fc0f3afa4dae01d958d",
+        "android_client_info": {
+          "package_name": "com.boushib.eventsismagi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3XYlgU1k1NBc2Uc2lKpeVsW9lcwXvwoI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+  <!--  <style name="Theme.Eventsismagi" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>-->
+    <style name="Theme.Eventsismagi" parent="Theme.Material3.DayNight.NoActionBar">
+
+    </style>
+
+    <!-- Dropdown style -->
+    <style name="DropdownMenuStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/dropdown_stroke</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/on_surface_variant</item>
+        <item name="android:textColorHint">@color/on_surface_variant</item>
+        <item name="android:textColor">@color/on_surface</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusBottomStart">4dp</item>
+        <item name="boxCornerRadiusBottomEnd">4dp</item>
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+</resources>

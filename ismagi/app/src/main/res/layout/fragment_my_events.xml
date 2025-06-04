@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragments.userfragments.MyEventsFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recyclerEventsClients"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+            android:id="@+id/emptyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:contentDescription="@string/empty_reservations"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_reservations_message"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+    </LinearLayout>
+
+</FrameLayout>

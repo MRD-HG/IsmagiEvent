@@ -1,0 +1,48 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/dasboard_navigation"
+            app:startDestination="@id/navigation_home_dashboard">
+
+    <!-- Fragments -->
+    <fragment android:id="@+id/navigation_add_event"
+              android:name="com.boushib.eventsismagi.fragments.adminfragments.AddEventsFragment"
+              android:label="fragment_add_events"
+              tools:layout="@layout/fragment_add_events"/>
+
+    <fragment android:id="@+id/navigation_home_dashboard"
+              android:name="com.boushib.eventsismagi.fragments.adminfragments.HomeDashboardFragment"
+              android:label="fragment_home_dashboard"
+              tools:layout="@layout/fragment_home_dashboard"/>
+
+    <fragment android:id="@+id/navigation_payments_dasboard"
+              android:name="com.boushib.eventsismagi.fragments.adminfragments.PaymentDasboardFragment"
+              android:label="fragment_payment_dasboard"
+              tools:layout="@layout/fragment_payment_dasboard"/>
+
+    <fragment android:id="@+id/navigation_settings_dasboard"
+              android:name="com.boushib.eventsismagi.fragments.adminfragments.SettingDashboardFragment"
+              android:label="fragment_setting_dashboard"
+              tools:layout="@layout/fragment_setting_dashboard">
+
+        <!-- Action to navigate to LoginFragment -->
+        <action
+                android:id="@+id/action_settingsFragment_to_loginFragment"
+                app:destination="@id/loginFragment2"
+                app:popUpTo="@id/loginFragment2"
+                app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment android:id="@+id/registerFragment2"
+              android:name="com.boushib.eventsismagi.fragments.RegisterFragment"
+              android:label="fragment_register"
+              tools:layout="@layout/fragment_register"/>
+
+    <fragment android:id="@+id/loginFragment2"
+              android:name="com.boushib.eventsismagi.fragments.LoginFragment"
+              android:label="fragment_login"
+              tools:layout="@layout/fragment_login"/>
+    <action
+            android:id="@+id/tohomedahboard"
+            app:destination="@id/navigation_home_dashboard" />
+</navigation>
